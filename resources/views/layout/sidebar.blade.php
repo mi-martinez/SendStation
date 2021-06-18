@@ -22,7 +22,7 @@
       <li class="nav-item {{ active_class(['email/*']) }}">
         <a class="nav-link" data-toggle="collapse" href="#email" role="button" aria-expanded="{{ is_active_route(['email/*']) }}" aria-controls="email">
           <i class="link-icon" data-feather="user"></i>
-          <span class="link-title">Contáctos</span>
+          <span class="link-title">Contactos</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
         <div class="collapse {{ show_class(['email/*']) }}" id="email">

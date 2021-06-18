@@ -1,28 +1,33 @@
 {
-  "_from": "@mdi/font@^5.1.45",
+  "_args": [
+    [
+      "@mdi/font@5.8.55",
+      "D:\\masser\\Laravel"
+    ]
+  ],
+  "_from": "@mdi/font@5.8.55",
   "_id": "@mdi/font@5.8.55",
   "_inBundle": false,
   "_integrity": "sha512-8mrwfFBsmj+D67ZiGQSe5TU/lcWCtDyli2eshQ2fvLCZGRPqFMM23YQp4+JMOTpk5yMZKTeAwNWIYfITy76OHA==",
   "_location": "/@mdi/font",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "@mdi/font@^5.1.45",
+    "raw": "@mdi/font@5.8.55",
     "name": "@mdi/font",
     "escapedName": "@mdi%2ffont",
     "scope": "@mdi",
-    "rawSpec": "^5.1.45",
+    "rawSpec": "5.8.55",
     "saveSpec": null,
-    "fetchSpec": "^5.1.45"
+    "fetchSpec": "5.8.55"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/@mdi/font/-/font-5.8.55.tgz",
-  "_shasum": "1464155bcbc8a6e4af6dffd611fe8e38e09af285",
-  "_spec": "@mdi/font@^5.1.45",
-  "_where": "/Users/suhailkc/Projects/tf/ui-laravel/template/light",
+  "_spec": "5.8.55",
+  "_where": "D:\\masser\\Laravel",
   "author": {
     "name": "Austin Andrews",
     "url": "http://twitter.com/templarian"
@@ -30,8 +35,6 @@
   "bugs": {
     "url": "https://github.com/Templarian/MaterialDesign/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "description": "Dist for Material Design Webfont. This includes the Stock and Community icons in a single webfont collection.",
   "homepage": "https://materialdesignicons.com",
   "keywords": [
