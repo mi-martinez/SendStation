@@ -19,22 +19,19 @@
         </a>
       </li>
       <li class="nav-item nav-category">MÓDULOS</li>
-      <li class="nav-item {{ active_class(['email/*']) }}">
-        <a class="nav-link" data-toggle="collapse" href="#email" role="button" aria-expanded="{{ is_active_route(['email/*']) }}" aria-controls="email">
+      <li class="nav-item {{ active_class(['contacts/*']) }}">
+        <a class="nav-link" data-toggle="collapse" href="#email" role="button" aria-expanded="{{ is_active_route(['contacts/*']) }}" aria-controls="email">
           <i class="link-icon" data-feather="user"></i>
           <span class="link-title">Contactos</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
-        <div class="collapse {{ show_class(['email/*']) }}" id="email">
+        <div class="collapse {{ show_class(['contacts/*']) }}" id="email">
           <ul class="nav sub-menu">
             <li class="nav-item">
-              <a href="{{ url('/email/inbox') }}" class="nav-link {{ active_class(['email/inbox']) }}">Lista 1</a>
+              <a href="{{ url('/contacts/all-contacts') }}" class="nav-link {{ active_class(['contacts/all-contacts']) }}">Todas las listas</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/email/read') }}" class="nav-link {{ active_class(['email/read']) }}">Lista 2</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ url('/email/compose') }}" class="nav-link {{ active_class(['email/compose']) }}">Lista 3</a>
+              <a href="{{ url('/email/read') }}" class="nav-link {{ active_class(['email/read']) }}">Todos los contactos</a>
             </li>
           </ul>
         </div>
