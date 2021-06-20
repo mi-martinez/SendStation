@@ -40,7 +40,7 @@
         </div>
       </li>
      
-      <li class="nav-item nav-category">CAMAPAÑA</li>
+      <li class="nav-item nav-category">CAMPAÑA</li>
       <li class="nav-item">
         <a href="#" class="nav-link">
           <i class="link-icon" data-feather="mail"></i>
@@ -51,6 +51,20 @@
         <a href="#" class="nav-link">
           <i class="link-icon" data-feather="smartphone"></i>
           <span class="link-title">SMS</span>
+        </a>
+      </li>
+
+      <li class="nav-item nav-category">FACTURACIÓN</li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="link-icon" data-feather="send"></i>
+          <span class="link-title">Plan Contratado</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="link-icon" data-feather="dollar-sign"></i>
+          <span class="link-title">Facturación</span>
         </a>
       </li>
     </ul>

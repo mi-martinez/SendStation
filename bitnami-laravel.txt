@@ -4,3 +4,16 @@ Comandos utiles:
 $ mkdir ~/myapp && cd ~/myapp
 $ curl -LO https://raw.githubusercontent.com/bitnami/bitnami-docker-laravel/master/docker-compose.yml
 $ docker-compose up
+
+List all artisan commands:
+
+$ docker-compose exec myapp php artisan list
+List all registered routes:
+
+$ docker-compose exec myapp php artisan route:list
+Create a new application controller named UserController:
+
+$ docker-compose exec myapp php artisan make:controller UserController
+Installing a new composer package called phpmailer/phpmailer with version 5.2.*:
+
+$ docker-compose exec myapp composer require phpmailer/phpmailer:5.2.*

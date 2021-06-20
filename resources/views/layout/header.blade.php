@@ -14,7 +14,7 @@
       </div>
     </form>
     <ul class="navbar-nav">
-
+              
       <li class="nav-item dropdown nav-profile">
         <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img src="/assets/images/30.png" alt="profile">
