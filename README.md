@@ -1,5 +1,5 @@
 # SendStation
-Repositorio de pruebas de gestion de usuarios y bases de datos.
+Repositorio de pruebas de gestion de usuarios y bases de datos SS.
 
 ![Test Image 4](https://github.com/mi-martinez/Laravel-Login/blob/master/public/assets/images/sendstation.png)
 
