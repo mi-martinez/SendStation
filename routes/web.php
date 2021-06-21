@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 /* Rutas Michael */
 Route::group(['prefix' => 'contacts'], function(){
+    Route::get('all-list-contacts', function () { return view('pages.contacts.all-list-contacts'); });
+    Route::get('add-list-contacts', function () { return view('pages.contacts.add-list-contacts'); });
     Route::get('all-contacts', function () { return view('pages.contacts.all-contacts'); });
 });
 /* -- */

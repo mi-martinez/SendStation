@@ -14,6 +14,19 @@
 .title-table {
     padding-bottom: 25px;
 }
-.table-responsive {
-    border-bottom: 1px solid #e8ebf1;
+.datepicker.input-group {
+    border: 1px solid #d8d8d8 !important;
+}
+.dashboard-date.datepicker.input-group span {
+    border-right: 1px solid #d8d8d8 !important;
+}
+button.btn.btn-secondary {
+    border: 1px solid #0083f5 !important;
+    background: #fff !important;
+    color: #0083f5 !important;
+}
+.row-submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
 }

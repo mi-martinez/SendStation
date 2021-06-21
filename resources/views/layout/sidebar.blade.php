@@ -28,10 +28,10 @@
         <div class="collapse {{ show_class(['contacts/*']) }}" id="email">
           <ul class="nav sub-menu">
             <li class="nav-item">
-              <a href="{{ url('/contacts/all-contacts') }}" class="nav-link {{ active_class(['contacts/all-contacts']) }}">Todas las listas</a>
+              <a href="{{ url('/contacts/all-list-contacts') }}" class="nav-link {{ active_class(['contacts/all-list-contacts']) }}">Todas las listas</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/email/read') }}" class="nav-link {{ active_class(['email/read']) }}">Todos los contactos</a>
+              <a href="{{ url('/contacts/all-contacts') }}" class="nav-link {{ active_class(['contacts/all-contacts']) }}">Todos los contactos</a>
             </li>
           </ul>
         </div>

@@ -2,25 +2,26 @@
 
 @push('plugin-styles')
   <link href="{{ asset('assets/plugins/datatables-net/dataTables.bootstrap4.css') }}" rel="stylesheet" />
-  <link href="{{ asset('assets/plugins/prismjs/prism.css') }}" rel="stylesheet" />
 @endpush
 
 @section('content')
 <nav class="page-breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Contactos</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Todos los contactos</li>
+    <li class="breadcrumb-item active" aria-current="page">Listas de contactos</li>
   </ol>
 </nav>
 
 <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
   <div>
-    <h4 class="mb-3 mb-md-0">Todos los contactos</h4>
+    <h4 class="mb-3 mb-md-0">Listas de contactos</h4>
   </div>
   <div class="d-flex align-items-center flex-wrap text-nowrap">
-    <button type="button" class="btn btn-primary btn-icon-text mb-2 mb-md-0" data-toggle="modal" data-target="#add-contact">
-      NUEVO CONTACTO
-    </button>
+      <a href="{{ url('/contacts/add-list-contacts') }}">
+            <button type="button" class="btn btn-primary btn-icon-text mb-2 mb-md-0">
+            NUEVA LISTA
+            </button>
+      </a>      
   </div>
 </div>
 <div class="row">
@@ -100,36 +101,11 @@
     </div>
   </div>
 </div>
-
- <!-- Add Contact -->
-<div class="modal" id="add-contact" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Añádir Contacto</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-          Formulario 
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar</button>
-      </div>
-    </div>
-  </div>
-</div>
 @endsection
 
 @push('plugin-scripts')
   <script src="{{ asset('assets/plugins/datatables-net/jquery.dataTables.js') }}"></script>
   <script src="{{ asset('assets/plugins/datatables-net-bs4/dataTables.bootstrap4.js') }}"></script>
-  <script src="{{ asset('assets/plugins/prismjs/prism.js') }}"></script>
-  <script src="{{ asset('assets/plugins/clipboard/clipboard.min.js') }}"></script>
 @endpush
 
 @push('custom-scripts')
