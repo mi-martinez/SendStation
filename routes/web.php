@@ -12,14 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('dashboard');
-});
+    return view('pages.auth.login');
+})->name('login');
 
 /* Rutas Michael */
+Route::get('dashboard', function () {
+    return view('dashboard');
+})->name('dashboard') ;
+
+
 Route::group(['prefix' => 'contacts'], function(){
-    Route::get('all-list-contacts', function () { return view('pages.contacts.all-list-contacts'); });
-    Route::get('add-list-contacts', function () { return view('pages.contacts.add-list-contacts'); });
-    Route::get('all-contacts', function () { return view('pages.contacts.all-contacts'); });
+    Route::get('all-list-contacts', function () { return view('pages.contacts.all-list-contacts'); })->name('list');
+    Route::get('add-list-contacts', function () { return view('pages.contacts.add-list-contacts'); })->name('add-contacts');
+    Route::get('all-contacts', function () { return view('pages.contacts.all-contacts'); })->name('all-contacts');
 });
 /* -- */
 

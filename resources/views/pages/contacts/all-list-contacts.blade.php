@@ -4,6 +4,8 @@
   <link href="{{ asset('assets/plugins/datatables-net/dataTables.bootstrap4.css') }}" rel="stylesheet" />
 @endpush
 
+@section('title','Listas ')
+
 @section('content')
 <nav class="page-breadcrumb">
   <ol class="breadcrumb">

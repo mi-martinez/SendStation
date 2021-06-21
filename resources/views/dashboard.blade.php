@@ -4,6 +4,8 @@
   <link href="{{ asset('assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css') }}" rel="stylesheet" />
 @endpush
 
+@section('title','Dashboard ')
+
 @section('content')
 <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
   <div>

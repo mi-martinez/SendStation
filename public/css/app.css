@@ -8176,7 +8176,6 @@ button.bg-danger-muted:focus {
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -8196,9 +8195,8 @@ button.bg-danger-muted:focus {
   z-index: 1030;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -25021,20 +25019,32 @@ div.tagsinput span.tag {
   padding-bottom: 25px;
 }
 
-.table-responsive {
-  border-bottom: 1px solid #e8ebf1;
-}
-
-.active a.nav-link {
-  background: #009bea0a;
-}
-
 .datepicker.input-group {
   border: 1px solid #d8d8d8 !important;
 }
 
 .dashboard-date.datepicker.input-group span {
   border-right: 1px solid #d8d8d8 !important;
+}
+
+button.btn.btn-secondary, .fc button.btn-secondary.fc-button, .swal2-modal .swal2-actions button.btn-secondary {
+  border: 1px solid #0083f5 !important;
+  background: #fff !important;
+  color: #0083f5 !important;
+}
+
+.row-submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+span.gestion {
+  font-size: 10px;
+  vertical-align: inherit;
+  color: #a7a7a7;
+  font-weight: 100;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=app.css.map*/

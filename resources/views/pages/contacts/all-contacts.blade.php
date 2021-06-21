@@ -5,6 +5,8 @@
   <link href="{{ asset('assets/plugins/prismjs/prism.css') }}" rel="stylesheet" />
 @endpush
 
+@section('title','Contactos ')
+
 @section('content')
 <nav class="page-breadcrumb">
   <ol class="breadcrumb">
