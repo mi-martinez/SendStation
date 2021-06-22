@@ -10,10 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Support\Facades\Route;
+use Auth0\Login\Auth0Controller;
+use App\Http\Controllers\Auth\Auth0IndexController;
 
+/*
 Route::get('/', function () {
     return view('pages.auth.login');
 })->name('login');
+*/
 
 /* Rutas Michael */
 Route::get('dashboard', function () {
@@ -26,7 +31,13 @@ Route::group(['prefix' => 'contacts'], function(){
     Route::get('add-list-contacts', function () { return view('pages.contacts.add-list-contacts'); })->name('add-contacts');
     Route::get('all-contacts', function () { return view('pages.contacts.all-contacts'); })->name('all-contacts');
 });
-/* -- */
+/* Auth0 Michael */
+Route::view('/', 'welcome');
+Route::get('/auth0/callback', [Auth0Controller::class, 'callback'])->name('auth0-callback');
+Route::get('/login', [Auth0IndexController::class, 'login'])->name('login');
+Route::get('/logout', [Auth0IndexController::class, 'logout'])->name('logout');
+Route::get('/profile', [Auth0IndexController::class, 'profile'])->name('profile');
+
 
 Route::group(['prefix' => 'email'], function(){
     Route::get('inbox', function () { return view('pages.email.inbox'); });
