@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>@yield('title')Masser CMM - SendStation</title>
+  <title>Masser CMM - SendStation</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,7 +24,6 @@
   <!-- end common css -->
 
   @stack('style')
-  @livewireStyles
 </head>
 <body data-base-url="{{url('/')}}">
 
@@ -56,6 +55,5 @@
     <!-- end common js -->
 
     @stack('custom-scripts')
-    @livewireScripts
 </body>
 </html>

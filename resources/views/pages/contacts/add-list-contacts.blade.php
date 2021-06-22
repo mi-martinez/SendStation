@@ -11,8 +11,6 @@
   <link href="{{ asset('assets/plugins/tempusdominus-bootstrap-4/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" />
 @endpush
 
-@section('title','Añadir Lista ')
-
 @section('content')
 
 <div class="d-flex justify-content-center align-items-center flex-wrap grid-margin">
@@ -31,22 +29,21 @@
         </div>
         <p class="text-muted mb-4">Utiliza este archivo como plantilla. <a href="#">Descargar CSV</a></p>
        
-        <form action="" method="post" action="">
-          @csrf
+       
         <div class="form-group row">
-              <div class="col-lg-3">
-              <label class="col-form-label">Título de la Lista.</label>
-            </div>
-            <div class="col-lg-9">
-              <input class="form-control" maxlength="25" name="name-list" id="defaultconfig" type="text" placeholder="Nombre de la lista" required>
-            </div>
+          <div class="col-lg-3">
+            <label class="col-form-label">Título de la Lista.</label>
           </div>
-          <label for="name">Subir contactos archivo CSV</label>
-          <input type="file" id="myDropify" name="file-upload" class="border"/>
-          <div class="row-submit">
-          <input class="btn btn-primary" type="submit" value="Crear Lista">
+          <div class="col-lg-9">
+            <input class="form-control" maxlength="25" name="defaultconfig" id="defaultconfig" type="text" placeholder="Type Something..">
           </div>
-        </form>
+        </div>
+        <label for="name">Subir contactos archivo CSV</label>
+        <input type="file" id="myDropify" class="border"/>
+        <div class="row-submit">
+        <input class="btn btn-primary" type="submit" value="Crear Lista">
+        </div>
+
       </div> 
     </div>
   </div>

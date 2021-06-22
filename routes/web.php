@@ -16,20 +16,14 @@ use App\Http\Controllers\Auth\Auth0IndexController;
 
 /*
 Route::get('/', function () {
-    return view('pages.auth.login');
-})->name('login');
-*/
+    return view('dashboard');
+});
 
 /* Rutas Michael */
-Route::get('dashboard', function () {
-    return view('dashboard');
-})->name('dashboard') ;
-
-
 Route::group(['prefix' => 'contacts'], function(){
-    Route::get('all-list-contacts', function () { return view('pages.contacts.all-list-contacts'); })->name('list');
-    Route::get('add-list-contacts', function () { return view('pages.contacts.add-list-contacts'); })->name('add-contacts');
-    Route::get('all-contacts', function () { return view('pages.contacts.all-contacts'); })->name('all-contacts');
+    Route::get('all-list-contacts', function () { return view('pages.contacts.all-list-contacts'); });
+    Route::get('add-list-contacts', function () { return view('pages.contacts.add-list-contacts'); });
+    Route::get('all-contacts', function () { return view('pages.contacts.all-contacts'); });
 });
 /* Auth0 Michael */
 Route::view('/', 'welcome');
