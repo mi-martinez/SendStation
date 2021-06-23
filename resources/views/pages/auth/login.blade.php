@@ -1,18 +1,13 @@
 @extends('layout.master2')
 
 @section('content')
-<div class="page-content d-flex align-items-center justify-content-center">
+<div class="page-content d-flex align-items-center justify-content-center bck-img">
 
   <div class="row w-100 mx-0 auth-page">
-    <div class="col-md-8 col-xl-6 mx-auto">
-      <div class="card">
+    <div class="col-md-6 col-xl-4 mx-auto">
+      <div class="card maxw">
         <div class="row">
-          <div class="col-md-4 pr-md-0">
-            <div class="auth-left-wrapper" style="background-image: url('/assets/images/bck-login.jpg')">
-
-            </div>
-          </div>
-          <div class="col-md-8 pl-md-0">
+          <div class="col-md-12 pl-md-0 d-flex justify-content-center">
             <div class="auth-form-wrapper px-4 py-5">
                <img src="/assets/images/sendstation.png" alt="" class="logo-ss">
               <h5 class="text-muted font-weight-normal mb-4">¡Bienvenido! Ingresa a tu cuenta.</h5>
@@ -32,7 +27,7 @@
                   </label>
                 </div>
                 <div class="mt-3">
-                  <a href="{{ url('/') }}" class="btn btn-primary mr-2 mb-2 mb-md-0">Iniciar Sesión</a>
+                  <a href="{{ url('/dashboard') }}" class="btn btn-primary mr-2 mb-2 mb-md-0">Iniciar Sesión</a>
 
                 </div>
                 <!-- <a href="{{ url('/auth/register') }}" class="d-block mt-3 text-muted">Not a user? Sign up</a> -->

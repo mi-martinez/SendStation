@@ -1,7 +1,8 @@
 <nav class="sidebar">
   <div class="sidebar-header">
     <a href="#" class="sidebar-brand">
-      <img src="/assets/images/logo.png" alt="">
+      <!-- <img src="/assets/images/logo.png" alt=""> -->
+      <img src="/assets/images/sendstation.png" alt="SendStation" style="max-width: 150px;">
     </a>
     <div class="sidebar-toggler not-active">
       <span></span>
@@ -38,8 +39,8 @@
       </li>
      
       <li class="nav-item nav-category">CAMPAÑA</li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">
+      <li class="nav-item {{ active_class(['campaign/*']) }}">
+        <a href="{{ url('/campaign/list-campaign') }}" class="nav-link">
           <i class="link-icon" data-feather="mail"></i>
           <span class="link-title">Correo Electrónico</span>
         </a>

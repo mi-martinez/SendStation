@@ -20,9 +20,11 @@
     <h4 class="mb-3 mb-md-0">Todos los contactos</h4>
   </div>
   <div class="d-flex align-items-center flex-wrap text-nowrap">
-    <button type="button" class="btn btn-primary btn-icon-text mb-2 mb-md-0" data-toggle="modal" data-target="#add-contact">
-      NUEVO CONTACTO
-    </button>
+  <a href="{{ url('/contacts/add-contact') }}">
+      <button type="button" class="btn btn-primary btn-icon-text mb-2 mb-md-0">
+        NUEVO CONTACTO
+      </button>
+  	</a>
   </div>
 </div>
 <div class="row">
@@ -33,19 +35,19 @@
           <table id="dataTableExample" class="table">
             <thead>
               <tr>
-                <th>Título</th>
-                <th>CONTACTOS</th>
-                <th>FECHA CREACIóN</th>
-                <th>ID</th>
+                <th>Correo Electrónico</th>
+                <th>Enviados</th>
+                <th>Entregados</th>
+                <th>Añádido</th>
                 <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Campaña 300k Estaciones</td>
-                <td>2.654</td>
+                <td>demo@demo.com</td>
+                <td>1</td>
+                <td>1</td>
                 <td>26/04/2021</td>
-                <td>61</td>
                 <td>
                   <div class="dropdown d-flex justify-content-end">
                     <button class="btn p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -60,10 +62,10 @@
               </td>
               </tr>
               <tr>
-                <td>Promo Aceite Bogotá</td>
-                <td>2.654</td>
+                <td>demo@demo.com</td>
+                <td>1</td>
+                <td>1</td>
                 <td>26/04/2021</td>
-                <td>63</td>
                 <td>
                   <div class="dropdown d-flex justify-content-end">
                     <button class="btn p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -78,10 +80,10 @@
               </td>
               </tr>
               <tr>
-                <td>Altoque</td>
-                <td>0</td>
+                <td>demo@demo.com</td>
+                <td>1</td>
+                <td>1</td>
                 <td>26/04/2021</td>
-                <td>66</td>
                 <td>
                   <div class="dropdown d-flex justify-content-end">
                     <button class="btn p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -103,28 +105,7 @@
   </div>
 </div>
 
- <!-- Add Contact -->
-<div class="modal" id="add-contact" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Añádir Contacto</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-          Formulario 
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar</button>
-      </div>
-    </div>
-  </div>
-</div>
+ 
 @endsection
 
 @push('plugin-scripts')

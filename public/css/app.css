@@ -7,8 +7,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --blue: #5E50F9;
-  --indigo: #6610f2;
+  --blue: #fb0929;
+  --indigo: #17f1bb;
   --purple: #6a008a;
   --pink: #E91E63;
   --red: #f96868;
@@ -18208,7 +18208,7 @@ input:-webkit-autofill:active {
   -webkit-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
   font-size: calc(0.875rem - 0.05rem);
-  font-family: "Overpass", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin-top: auto;
 }
@@ -18259,7 +18259,7 @@ pre {
 
 code {
   padding: 5px;
-  font-family: "Overpass", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   border-radius: 4px;
@@ -19023,13 +19023,13 @@ code {
 .main-content .highlight pre {
   padding: 15px;
   font-size: 0.875rem;
-  font-family: "Overpass", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: transparent;
   line-height: 1.4;
   margin: 0;
 }
 .main-content .highlight pre code {
-  font-family: "Overpass", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0;
   -moz-tab-size: 8;
     -o-tab-size: 8;
@@ -19142,7 +19142,7 @@ code {
 
 /* Typography */
 body {
-  font-family: "Overpass", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -21392,7 +21392,7 @@ address p {
 .btn, .wizard > .actions .disabled a, .wizard > .actions a, .wizard > .actions a:hover, .swal2-modal .swal2-actions button, .fc .fc-button {
   font-size: 0.875rem;
   line-height: 1;
-  padding: 0.5rem 1rem 0.4rem;
+  padding: 0.5rem 0.8rem 0.5rem;
   /* Buttons with only icons */
   /* Buttons with icon and text */
 }
@@ -23688,6 +23688,18 @@ select.form-control.border-danger-muted:focus, .select2-container--default .sele
 .auth-page img.logo-ss {
   max-width: 250px;
   margin-bottom: 20px;
+  width: 100%;
+}
+
+.maxw {
+  max-width: 370px;
+  margin: auto;
+}
+
+.bck-img {
+  background: url("/assets/images/bck-sendstation.jpg") !important;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (min-width: 992px) {
@@ -24276,7 +24288,7 @@ select.form-control.border-danger-muted:focus, .select2-container--default .sele
   background: #ffffff;
 }
 .datepicker.datepicker-dropdown .datepicker-days table.table-condensed thead tr th.dow {
-  font-family: "Overpass", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000;
   font-size: 0.875rem;
   font-weight: initial;
@@ -25045,6 +25057,11 @@ span.gestion {
   color: #a7a7a7;
   font-weight: 100;
   margin-right: 10px;
+}
+
+.list-bck {
+  background: #f8f9fa;
+  padding: 10px 20px 16px;
 }
 
 /*# sourceMappingURL=app.css.map*/

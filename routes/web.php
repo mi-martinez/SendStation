@@ -22,10 +22,16 @@ Route::get('dashboard', function () {
 
 
 Route::group(['prefix' => 'contacts'], function(){
-    Route::get('all-list-contacts', function () { return view('pages.contacts.all-list-contacts'); })->name('list');
-    Route::get('add-list-contacts', function () { return view('pages.contacts.add-list-contacts'); })->name('add-contacts');
+    Route::get('all-list-contacts', function () { return view('pages.contacts.all-list-contacts'); })->name('list-contacts');
+    Route::get('add-list-contacts', function () { return view('pages.contacts.add-list-contacts'); })->name('add-list-contacts');
     Route::get('all-contacts', function () { return view('pages.contacts.all-contacts'); })->name('all-contacts');
+    Route::get('add-contact', function () { return view('pages.contacts.add-contact'); })->name('add-contacts');
 });
+
+Route::group(['prefix' => 'campaign'], function(){
+    Route::get('list-campaign', function () { return view('pages.campaign.list-campaign'); })->name('list-campaign');
+});
+
 /* -- */
 
 Route::group(['prefix' => 'email'], function(){
